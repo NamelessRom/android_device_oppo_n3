@@ -49,6 +49,7 @@ TARGET_USERIMAGES_USE_F2FS := true
 BOARD_NFC_CHIPSET := pn547
 
 # Recovery
+RECOVERY_VARIANT := twrp
 TARGET_RECOVERY_FSTAB := device/oppo/n3/rootdir/etc/fstab.qcom
 
 AUDIO_FEATURE_LOW_LATENCY_PRIMARY := true
@@ -68,3 +69,11 @@ BOARD_SEPOLICY_UNION += \
 
 # Inherit from the proprietary version
 -include vendor/oppo/n3/BoardConfigVendor.mk
+
+# TWRP
+DEVICE_RESOLUTION := 1080x1920
+RECOVERY_GRAPHICS_USE_LINELENGTH := true
+TW_NO_USB_STORAGE := true
+TW_INCLUDE_JB_CRYPTO := true
+BOARD_SUPPRESS_SECURE_ERASE := true
+TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
