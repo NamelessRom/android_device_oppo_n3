@@ -48,7 +48,7 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 114510381056 # 114510397440 - 16384 for cr
 BOARD_NFC_CHIPSET := pn547
 
 # Recovery
-TARGET_RECOVERY_FSTAB := device/oppo/n3/rootdir/etc/fstab.qcom
+TARGET_RECOVERY_FSTAB := device/oppo/n3/fstab.twrp
 
 AUDIO_FEATURE_LOW_LATENCY_PRIMARY := true
 
@@ -56,3 +56,11 @@ TARGET_INIT_VENDOR_LIB := libinit_n3
 
 # Inherit from the proprietary version
 -include vendor/oppo/n3/BoardConfigVendor.mk
+
+# TWRP
+DEVICE_RESOLUTION := 1080x1920
+RECOVERY_GRAPHICS_USE_LINELENGTH := true
+TW_NO_USB_STORAGE := true
+TW_INCLUDE_JB_CRYPTO := true
+BOARD_SUPPRESS_SECURE_ERASE := true
+TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
