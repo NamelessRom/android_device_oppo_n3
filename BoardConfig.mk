@@ -49,7 +49,7 @@ BOARD_NFC_CHIPSET := pn547
 
 # Recovery
 RECOVERY_VARIANT := twrp
-TARGET_RECOVERY_FSTAB := device/oppo/n3/fstab.twrp
+TARGET_RECOVERY_FSTAB := device/oppo/n3/rootdir/etc/fstab.qcom
 
 AUDIO_FEATURE_LOW_LATENCY_PRIMARY := true
 
