@@ -71,7 +71,7 @@ BOARD_SEPOLICY_UNION += \
 -include vendor/oppo/n3/BoardConfigVendor.mk
 
 # TWRP
-DEVICE_RESOLUTION := 1080x1920
+TW_THEME := portrait_hdpi
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
 TW_NO_USB_STORAGE := true
 TW_INCLUDE_JB_CRYPTO := true
