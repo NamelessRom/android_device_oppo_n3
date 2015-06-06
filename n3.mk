@@ -58,6 +58,10 @@ PRODUCT_PACKAGES += \
     nfc_nci.pn54x.default \
     com.android.nfc_extras
 
+# Power
+PRODUCT_PACKAGES += \
+    power.msm8974
+
 # NFC config
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/libnfc-brcm.conf:system/etc/libnfc-brcm.conf
